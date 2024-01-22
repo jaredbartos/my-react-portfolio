@@ -3,12 +3,12 @@ import photoOfMeAndRebecca from '../assets/images/jared_and_rebecca.jpg';
 export default function AboutMePage() {
   return (
     <div className="container-fluid">
-      <div className="row">
-        <h2 className="text-center">About Me</h2>
+      <div className="row mb-5">
+        <h2 className="col text-center">About Me</h2>
       </div>
       <div className="row d-flex justify-content-center">
         <div className="col-3 d-flex align-items-center">
-          <img src={photoOfMeAndRebecca} className="img-fluid" alt="Me golfing with my fiance, Rebecca" />
+          <img src={photoOfMeAndRebecca} className="img-fluid" alt="Me golfing with my fiance, Rebecca" title="Me golfing with my fiance, Rebecca" />
         </div>
         <div className="col-3 d-flex align-items-center">
           <p>
