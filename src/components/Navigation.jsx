@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Navigation() {
   const links = [
@@ -8,6 +9,8 @@ export default function Navigation() {
     { key: 4, title: 'Resume', path: '/resume' }
   ]
 
+  const [activePath, setActivePath] = useState(document.location.pathname);
+
   return (
     <ul className="navbar-nav">
       {links.map((link) => {
@@ -15,7 +18,8 @@ export default function Navigation() {
           <Link
             key={link.key}
             to={link.path}
-            className={`nav-link ${document.location.pathname === link.path && 'active'}`}
+            onClick={() => setActivePath(link.path)}
+            className={activePath === link.path ? 'nav-link active' : 'nav-link'}
           >
             {link.title}
           </Link>

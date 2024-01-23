@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import AboutMePage from './pages/AboutMePage';
+import PortfolioPage from './pages/PortfolioPage';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <AboutMePage />,
+      },
+      {
+        path: '/portfolio',
+        element: <PortfolioPage />,
       }
     ]
   }
