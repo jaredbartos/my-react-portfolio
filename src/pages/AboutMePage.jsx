@@ -1,3 +1,4 @@
+// Import personal photo for page
 import photo from '../assets/images/jared_and_rebecca.jpg';
 
 export default function AboutMePage() {
