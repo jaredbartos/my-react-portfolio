@@ -1,17 +1,26 @@
-export default function Navigation({ links }) {
+import { Link } from 'react-router-dom';
+
+export default function Navigation() {
+  const links = [
+    { key: 1, title: 'About Me', path: '/' },
+    { key: 2, title: 'Portfolio', path: '/portfolio' },
+    { key: 3, title: 'Contact', path: '/contact' },
+    { key: 4, title: 'Resume', path: '/resume' }
+  ]
+
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary mb-5">
-      <div className="container-fluid">
-        <h1 className="navbar-brand">Jared Bartos</h1>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            {links.map((link) => link)}
-          </ul>
-        </div>
-      </div>
-    </nav>
-  )
+    <ul className="navbar-nav">
+      {links.map((link) => {
+        return (
+          <Link
+            key={link.key}
+            to={link.path}
+            className={`nav-link ${document.location.pathname === link.path && 'active'}`}
+          >
+            {link.title}
+          </Link>
+        );
+      })}
+    </ul>
+  );
 }

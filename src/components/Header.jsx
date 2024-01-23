@@ -1,15 +1,17 @@
 import Navigation from './Navigation';
-import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <Navigation
-    links={[
-      <Link key={1} className={`nav-link ${document.location.pathname === '/' && 'active'}`} to="/">About Me</Link>,
-      <Link key={2} className={`nav-link ${document.location.pathname === '/portfolio' && 'active'}`} to="/portfolio">Portfolio</Link>,
-      <Link key={3} className={`nav-link ${document.location.pathname === '/contact' && 'active'}`} to="/contact">Contact</Link>,
-      <Link key={4} className={`nav-link ${document.location.pathname === '/resume' && 'active'}`} to="/resume">Resume</Link>
-    ]}
-    />
-  )
+    <nav className="navbar navbar-expand-lg bg-body-tertiary mb-5">
+      <div className="container-fluid">
+        <h1 className="navbar-brand">Jared Bartos</h1>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <Navigation />
+        </div>
+      </div>
+    </nav>
+  );
 }
