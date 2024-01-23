@@ -5,8 +5,10 @@ import './index.css';
 import App from './App';
 import AboutMePage from './pages/AboutMePage';
 import PortfolioPage from './pages/PortfolioPage';
+import ContactPage from './pages/ContactPage';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ResumePage from './pages/ResumePage';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: '/portfolio',
         element: <PortfolioPage />,
+      },
+      {
+        path: '/contact',
+        element: <ContactPage />,
+      },
+      {
+        path: '/resume',
+        element: <ResumePage />,
       }
     ]
   }
