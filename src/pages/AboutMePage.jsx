@@ -1,4 +1,4 @@
-import photoOfMeAndRebecca from '../assets/images/jared_and_rebecca.jpg';
+import photo from '../assets/images/jared_and_rebecca.jpg';
 
 export default function AboutMePage() {
   return (
@@ -8,7 +8,7 @@ export default function AboutMePage() {
       </div>
       <div className="row d-flex justify-content-center">
         <div className="col-3 d-flex align-items-center">
-          <img src={photoOfMeAndRebecca} className="img-fluid" alt="Me golfing with my fiance, Rebecca" title="Me golfing with my fiance, Rebecca" />
+          <img src={photo} className="img-fluid" alt="Me golfing with my fiance, Rebecca" title="Me golfing with my fiance, Rebecca" />
         </div>
         <div className="col-3 d-flex align-items-center">
           <p>
@@ -19,5 +19,5 @@ export default function AboutMePage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
