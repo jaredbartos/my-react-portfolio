@@ -18,7 +18,7 @@ export default function PortfolioPage() {
   return (
     <div className="container">
       <div className="row d-flex flex-wrap justify-content-center">
-          {projectCards}
+        {projectCards}
       </div>
     </div>
   );
