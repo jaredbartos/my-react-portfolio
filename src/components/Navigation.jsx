@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 // Import link data
-import { links } from '../assets/js/data'
+import { links } from '../assets/js/data';
 
 export default function Navigation() {
   // Declare useState variables for the active location path and set value to initial path
   const [activePath, setActivePath] = useState(document.location.pathname);
 
   // Map through link data to create link elements for use in navigation
-  const linkElements = links.map((link) => {
+  const linkElements = links.map((link, index) => {
     return (
       <Link
-        key={link.key}
+        key={index}
         to={link.path}
         // Set onclick behavior to change activePath state to link path
         onClick={() => setActivePath(link.path)}
