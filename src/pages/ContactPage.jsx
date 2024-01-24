@@ -7,7 +7,7 @@ export default function ContactPage() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [emptyFields, setEmptyFields] = useState([]);
-  const [invalidPassword, setInvalidPassword] = useState(false);
+  const [invalidEmail, setInvalidEmail] = useState(false);
 
   const checkForEmptyFields = (field, value) => {
     if (value) {
@@ -18,9 +18,15 @@ export default function ContactPage() {
     }    
   };
 
-  const checkForInvalidPassword = (password) => {
-    
-  }
+  const checkForInvalidEmail = (input) => {
+    if (input) {
+      if (!validateEmail(input)) {
+        setInvalidEmail(true);
+      } else {
+        setInvalidEmail(false);
+      }
+    }
+  };
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -31,6 +37,7 @@ export default function ContactPage() {
       setName(inputValue);
     } else if (inputType === 'email') {
       setEmail(inputValue);
+      checkForInvalidEmail(inputValue);
     } else {
       setMessage(inputValue);
     }
@@ -54,6 +61,8 @@ export default function ContactPage() {
           name={name}
           email={email}
           message={message}
+          invalidEmail={invalidEmail}
+          emptyFields={emptyFields}
           />
         </div>
       </div>
