@@ -44,8 +44,18 @@ export default function ContactForm(props) {
         </label>
       </div>
       <div className="form-floating">
-        <textarea className="form-control" onChange={props.handleInputChange} name="message" placeholder="Leave a message here" id="messageInput" value={props.message} style={messageStyle}></textarea>
-        <label htmlFor="messageInput">Message</label>
+        <textarea
+          className={props.emptyFields.includes('message') ? "form-control is-invalid" : "form-control"}
+          onChange={props.handleInputChange}
+          name="message"
+          placeholder="Leave a message here"
+          id="messageInput"
+          value={props.message}
+          style={messageStyle}>
+        </textarea>
+        <label htmlFor="messageInput">
+          {props.emptyFields.includes('message') ? 'Please enter a message' : 'Message'}
+        </label>
       </div>
     </form>
   );
