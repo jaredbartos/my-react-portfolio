@@ -2,19 +2,21 @@
 function EmailLabel(props) {
   if (props.emptyFields.includes('email')) {
     return 'Please enter an email address';
-  } else if (props.invalidEmail) {
+  } else if (!props.isValidEmail) {
     return 'Invalid email address';
   } else {
     return 'Email address';
   }
 }
 
+// React component for submit button
 function SubmitButton(props) {
   return (
     <button
       type="submit"
       className="btn btn-primary mt-3"
-      disabled={props.name && props.email && props.message && !props.invalidEmail ? false : true}
+      // Disable button until form requirements are met
+      disabled={props.name && props.email && props.message && props.isValidEmail ? false : true}
     >
       Submit
     </button>
@@ -48,7 +50,7 @@ export default function ContactForm(props) {
           onChange={props.handleInputChange}
           name="email"
           // If field is empty onBlur, use invalid form bootstrap class
-          className={props.emptyFields.includes('email') || props.invalidEmail ? "form-control is-invalid" : "form-control"}
+          className={props.emptyFields.includes('email') || !props.isValidEmail ? "form-control is-invalid" : "form-control"}
           id="emailInput"
           placeholder="name@example.com"
           value={props.email} />

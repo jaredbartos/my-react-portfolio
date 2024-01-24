@@ -14,7 +14,7 @@ export default function ContactPage() {
   // Create useState variables to keep track of what fields are empty in contact form
   const [emptyFields, setEmptyFields] = useState([]);
   // Create useState variables to keep track of email validation
-  const [invalidEmail, setInvalidEmail] = useState(false);
+  const [isValidEmail, setIsValidEmail] = useState(true);
 
   // Function to edit emptyFields state
   const checkForEmptyFields = (field, value) => {
@@ -32,12 +32,12 @@ export default function ContactPage() {
   };
 
   // Function to check email input and change invalidEmail state accordingly
-  const checkForInvalidEmail = (input) => {
+  const checkForValidEmail = (input) => {
     if (input) {
-      if (!validateEmail(input)) {
-        setInvalidEmail(true);
+      if (validateEmail(input)) {
+        setIsValidEmail(true);
       } else {
-        setInvalidEmail(false);
+        setIsValidEmail(false);
       }
     }
   };
@@ -54,7 +54,7 @@ export default function ContactPage() {
       setName(inputValue);
     } else if (inputType === 'email') {
       setEmail(inputValue);
-      checkForInvalidEmail(inputValue);
+      checkForValidEmail(inputValue);
     } else {
       setMessage(inputValue);
     }
@@ -81,7 +81,7 @@ export default function ContactPage() {
           name={name}
           email={email}
           message={message}
-          invalidEmail={invalidEmail}
+          isValidEmail={isValidEmail}
           emptyFields={emptyFields}
           />
         </div>
