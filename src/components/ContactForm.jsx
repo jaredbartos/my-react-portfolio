@@ -9,6 +9,18 @@ function EmailLabel(props) {
   }
 }
 
+function SubmitButton(props) {
+  return (
+    <button
+      type="submit"
+      className="btn btn-primary mt-3"
+      disabled={props.name && props.email && props.message && !props.invalidEmail ? false : true}
+    >
+      Submit
+    </button>
+  );
+}
+
 export default function ContactForm(props) {
   // Style for message box
   const messageStyle = { height: 400 };
@@ -41,10 +53,7 @@ export default function ContactForm(props) {
           placeholder="name@example.com"
           value={props.email} />
         <label htmlFor="emailInput">
-          <EmailLabel
-            emptyFields={props.emptyFields}
-            invalidEmail={props.invalidEmail}
-          />
+          <EmailLabel {...props} />
         </label>
       </div>
       <div className="form-floating">
@@ -62,6 +71,7 @@ export default function ContactForm(props) {
           {props.emptyFields.includes('message') ? 'Please enter a message' : 'Message'}
         </label>
       </div>
+      <SubmitButton {...props} />
     </form>
   );
 }
