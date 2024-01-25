@@ -1,11 +1,16 @@
+// Import skill data
 import { skills } from '../assets/js/data';
+// Import SkillCard component
 import SkillCard from '../components/SkillCard';
 
+// Resume Page Component
 export default function ResumePage() {
+  // Declare empty arrays for each skill category to push to later
   let langSkillItems = [];
   let jsSkillItems = [];
   let dataSkillItems = [];
 
+  // Function to create list items for each category
   const createListItems = (array, type) => {
     for (let skill of skills) {
       if (skill.category === type) {
@@ -17,6 +22,7 @@ export default function ResumePage() {
     }
   };
 
+  // Call functions to generate lists for each skill category
   createListItems(langSkillItems, 'Languages and Concepts');
   createListItems(jsSkillItems, 'JavaScript Tools');
   createListItems(dataSkillItems, 'Databases');
