@@ -49,6 +49,7 @@ export const projects = [
   },
 ];
 
+// Array of skills for resume page
 export const skills = [
   {
     id: 1,
