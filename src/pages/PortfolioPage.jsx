@@ -16,9 +16,14 @@ export default function PortfolioPage() {
   });
 
   return (
-    <div className="container">
-      <div className="row d-flex flex-wrap justify-content-center">
-        {projectCards}
+    <div className="container-fluid">
+      <div className="row mb-5">
+        <h2 className="col text-center">Portfolio</h2>
+      </div>
+      <div className="container">
+        <div className="row d-flex flex-wrap justify-content-center">
+          {projectCards}
+        </div>
       </div>
     </div>
   );

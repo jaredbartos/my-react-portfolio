@@ -72,18 +72,23 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="container">
-      <div className="row m-5 d-flex justify-content-center">
-        <div className="col-xxl-8">
-          <ContactForm
-          handleInputChange={handleInputChange}
-          handleBlur={handleBlur}
-          name={name}
-          email={email}
-          message={message}
-          isValidEmail={isValidEmail}
-          emptyFields={emptyFields}
-          />
+    <div className="container-fluid">
+      <div className="row mb-5">
+        <h2 className="col text-center">Contact</h2>
+      </div>
+      <div className="container">
+        <div className="row m-5 d-flex justify-content-center">
+          <div className="col-xxl-8">
+            <ContactForm
+            handleInputChange={handleInputChange}
+            handleBlur={handleBlur}
+            name={name}
+            email={email}
+            message={message}
+            isValidEmail={isValidEmail}
+            emptyFields={emptyFields}
+            />
+          </div>
         </div>
       </div>
     </div>

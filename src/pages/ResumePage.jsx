@@ -1,5 +1,9 @@
 export default function ResumePage() {
   return (
-    <p>This is the resume page.</p>
+    <div className="container-fluid">
+      <div className="row mb-5">
+        <h2 className="col text-center">Resume</h2>
+      </div>
+    </div>
   );
 }
