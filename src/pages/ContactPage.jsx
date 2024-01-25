@@ -71,6 +71,14 @@ export default function ContactPage() {
     checkForEmptyFields(inputType, inputValue);
   };
 
+  // Handler function for button click
+  const handleBtnClick = (e) => {
+    e.preventDefault();
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
+
   return (
     <div className="container-fluid">
       <div className="row mb-5">
@@ -82,6 +90,7 @@ export default function ContactPage() {
             <ContactForm
             handleInputChange={handleInputChange}
             handleBlur={handleBlur}
+            handleBtnClick={handleBtnClick}
             name={name}
             email={email}
             message={message}

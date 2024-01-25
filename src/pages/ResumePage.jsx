@@ -28,7 +28,7 @@ export default function ResumePage() {
       </div>
       <div className="row mb-5">
         <div className="col">
-          <p className="text-center">You can download my resume by clicking <a href={`${document.location.origin}/jared_bartos_resume.pdf`} title="Click to download" download>here!</a></p>
+          <p className="text-center">You can download my resume by clicking <a href='/jared_bartos_resume.pdf' title="Click to download" download>here!</a></p>
         </div>
       </div>
       <div className="container">
