@@ -1,8 +1,10 @@
 // Import images for projects
-import placeholder from '../images/placeholder.jpg';
 import techBlogScreenshot from '../images/screenshots/tech_blog_screenshot.png';
 import jateScreenshot from '../images/screenshots/jate_screenshot.png';
 import noteTakerScreenshot from '../images/screenshots/note_taker_screenshot.png';
+import gameDexScreenshot from '../images/screenshots/gamedex_screenshot.png';
+import weatherDashboardScreenshot from '../images/screenshots/weather_dashboard_screenshot.jpg';
+import codeQuizScreenshot from '../images/screenshots/code_quiz_screenshot.jpg';
 
 // Array to use for nav links
 export const links = [
@@ -33,22 +35,22 @@ export const projects = [
     githubLink: 'https://github.com/jaredbartos/note-taker'
   },
   {
-    title: 'Project 4',
-    image: placeholder,
-    deployedLink: 'https://www.google.com',
-    githubLink: 'https://www.google.com'
+    title: 'GameDex',
+    image: gameDexScreenshot,
+    deployedLink: 'https://gamedex-project.onrender.com/',
+    githubLink: 'https://github.com/jaredbartos/gamedex'
   },
   {
-    title: 'Project 5',
-    image: placeholder,
-    deployedLink: 'https://www.google.com',
-    githubLink: 'https://www.google.com'
+    title: 'Weather Dashboard',
+    image: weatherDashboardScreenshot,
+    deployedLink: 'https://jaredbartos.github.io/weather-dashboard',
+    githubLink: 'https://github.com/jaredbartos/weather-dashboard'
   },
   {
-    title: 'Project 6',
-    image: placeholder,
-    deployedLink: 'https://www.google.com',
-    githubLink: 'https://www.google.com'
+    title: 'Code Quiz',
+    image: codeQuizScreenshot,
+    deployedLink: 'https://jaredbartos.github.io/code-quiz',
+    githubLink: 'https://github.com/jaredbartos/code-quiz'
   },
 ];
 
