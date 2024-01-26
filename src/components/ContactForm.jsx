@@ -1,7 +1,7 @@
 // React component to conditionally render the label for email field
 function EmailLabel(props) {
   if (props.emptyFields.includes('email')) {
-    return 'Please enter an email address';
+    return 'Email address is required';
   } else if (!props.isValidEmail) {
     return 'Invalid email address';
   } else {
@@ -42,7 +42,7 @@ export default function ContactForm(props) {
           value={props.name}
         />
         <label htmlFor="nameInput">
-          {props.emptyFields.includes('name') ? 'Please enter a name' : 'Name'}
+          {props.emptyFields.includes('name') ? 'Name is required' : 'Name'}
         </label>
       </div>
       <div className="form-floating mb-3">
@@ -71,7 +71,7 @@ export default function ContactForm(props) {
           style={messageStyle}>
         </textarea>
         <label htmlFor="messageInput">
-          {props.emptyFields.includes('message') ? 'Please enter a message' : 'Message'}
+          {props.emptyFields.includes('message') ? 'Message is required' : 'Message'}
         </label>
       </div>
       <SubmitButton {...props} />

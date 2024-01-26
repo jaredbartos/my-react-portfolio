@@ -1,7 +1,7 @@
 // Import useState
 import { useState } from "react";
 // Import email validation function
-import { validateEmail } from "../utils";
+import { validateEmail } from "../assets/js/utils";
 // Import ContactForm component
 import ContactForm from "../components/ContactForm";
 

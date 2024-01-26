@@ -14,9 +14,7 @@ export default function ResumePage() {
   const createListItems = (array, type) => {
     for (let skill of skills) {
       if (skill.category === type) {
-        const listItem = (
-          <li key={skill.id} className="list-group-item">{skill.name}</li>
-        );
+        const listItem = <li key={skill.id} className="list-group-item">{skill.name}</li>;
         array.push(listItem);
       }
     }

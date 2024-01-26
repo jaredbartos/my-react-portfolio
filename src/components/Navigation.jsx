@@ -17,7 +17,7 @@ export default function Navigation() {
         onClick={() => setActivePath(link.path)}
         // Check if activePath is equal to the path of the link
         // If so, add 'active' class for bootstrap styling
-        className={activePath === link.path ? 'nav-link active' : 'nav-link'}
+        className={`mx-5 ${activePath === link.path ? 'nav-link active' : 'nav-link'}`}
       >
         {link.title}
       </Link>
@@ -25,7 +25,7 @@ export default function Navigation() {
   });  
 
   return (
-    <ul className="navbar-nav">
+    <ul className="navbar-nav fs-3 ms-5">
       {/* Insert links into nav */}
       {linkElements}
     </ul>
