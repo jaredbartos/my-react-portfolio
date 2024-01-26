@@ -1,5 +1,8 @@
 // Import images for projects
 import placeholder from '../images/placeholder.jpg';
+import techBlogScreenshot from '../images/screenshots/tech_blog_screenshot.png';
+import jateScreenshot from '../images/screenshots/jate_screenshot.png';
+import noteTakerScreenshot from '../images/screenshots/note_taker_screenshot.png';
 
 // Array to use for nav links
 export const links = [
@@ -12,22 +15,22 @@ export const links = [
 // Array to use for rendering projects on portfolio page
 export const projects = [
   {
-    title: 'Project 1',
-    image: placeholder,
-    deployedLink: 'https://www.google.com',
-    githubLink: 'https://www.google.com'
+    title: 'The Tech Blog',
+    image: techBlogScreenshot,
+    deployedLink: 'https://whispering-headland-36327-fcf93ff6f15e.herokuapp.com/',
+    githubLink: 'https://github.com/jaredbartos/tech-blog'
   },
   {
-    title: 'Project 2',
-    image: placeholder,
-    deployedLink: 'https://www.google.com',
-    githubLink: 'https://www.google.com'
+    title: 'J.A.T.E. Text Editor',
+    image: jateScreenshot,
+    deployedLink: 'https://text-editor-jaredbartos.onrender.com/',
+    githubLink: 'https://github.com/jaredbartos/text-editor'
   },
   {
-    title: 'Project 3',
-    image: placeholder,
-    deployedLink: 'https://www.google.com',
-    githubLink: 'https://www.google.com'
+    title: 'Note Taker',
+    image: noteTakerScreenshot,
+    deployedLink: 'https://note-taker-jaredbartos.onrender.com/',
+    githubLink: 'https://github.com/jaredbartos/note-taker'
   },
   {
     title: 'Project 4',
