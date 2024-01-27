@@ -25,7 +25,7 @@ export default function Navigation() {
   });  
 
   return (
-    <ul className="navbar-nav fs-3 ms-5">
+    <ul className="merriweather-regular navbar-nav fs-5 ms-5">
       {/* Insert links into nav */}
       {linkElements}
     </ul>

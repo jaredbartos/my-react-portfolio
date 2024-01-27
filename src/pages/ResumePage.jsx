@@ -28,7 +28,7 @@ export default function ResumePage() {
   return (
     <div className="container-fluid">
       <div className="row mb-5">
-        <h2 className="col text-center">Resume</h2>
+        <h2 className="col text-center merriweather-regular h4">Resume</h2>
       </div>
       <div className="row mb-5">
         <div className="col">
@@ -37,7 +37,7 @@ export default function ResumePage() {
       </div>
       <div className="container">
         <div className="row mb-4">
-          <h3 className="col text-center">Skills and Proficiencies</h3>
+          <h3 className="col text-center merriweather-regular h5">Skills and Proficiencies</h3>
           <SkillCard
             category='Languages and Concepts'
             skills={langSkillItems}
