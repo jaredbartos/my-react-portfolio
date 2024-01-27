@@ -8,7 +8,6 @@ export default function ResumePage() {
   // Declare empty arrays for each skill category to push to later
   let langSkillItems = [];
   let jsSkillItems = [];
-  let dataSkillItems = [];
 
   // Function to create list items for each category
   const createListItems = (array, type) => {
@@ -23,7 +22,6 @@ export default function ResumePage() {
   // Call functions to generate lists for each skill category
   createListItems(langSkillItems, 'Languages and Concepts');
   createListItems(jsSkillItems, 'JavaScript Tools');
-  createListItems(dataSkillItems, 'Databases');
 
   return (
     <div className="container-fluid from-bottom">
@@ -37,19 +35,17 @@ export default function ResumePage() {
       </div>
       <div className="container">
         <div className="row mb-4">
-          <h3 className="col text-center merriweather-regular h5">Skills and Proficiencies</h3>
-          <SkillCard
-            category='Languages and Concepts'
-            skills={langSkillItems}
-          />
-          <SkillCard
-            category='JavaScript Tools'
-            skills={jsSkillItems}
-          />
-          <SkillCard
-            category='Databases'
-            skills={dataSkillItems}
-          />
+          <h3 className="col text-center merriweather-regular h5 mb-4">Skills and Proficiencies</h3>
+          <div className="row d-flex justify-content-center">
+            <SkillCard
+              category='Languages and Concepts'
+              skills={langSkillItems}
+            />
+            <SkillCard
+              category='JavaScript Tools'
+              skills={jsSkillItems}
+            />
+          </div>
         </div>
       </div>
     </div>

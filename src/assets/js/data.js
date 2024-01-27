@@ -89,7 +89,7 @@ export const skills = [
   {
     id: 7,
     name: 'MySQL',
-    category: 'Databases'
+    category: 'Languages and Concepts'
   },
   {
     id: 8,
@@ -104,7 +104,7 @@ export const skills = [
   {
     id: 10,
     name: 'MongoDB',
-    category: 'Databases'
+    category: 'Languages and Concepts'
   },
   {
     id: 11,

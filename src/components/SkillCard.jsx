@@ -1,6 +1,6 @@
 export default function SkillCard({ category, skills }) {
   return (
-    <div className="card">
+    <div className="card shadow mx-3 mb-3 col-lg-5">
       <div className="card-header">
         {category}
       </div>
