@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <>
+    <div className="container-fluid from-bottom">
       <div className="row mt-5">
         <div className="col d-flex justify-content-center">
           <a className="mx-3" href="https://github.com/jaredbartos" target="_blank" rel="noreferrer" title="GitHub Profile">GitHub</a>
@@ -11,6 +11,6 @@ export default function Footer() {
       <div className="row">
         <p className="col text-center">&copy; 2024 - Built by Jared Bartos</p>
       </div>     
-    </>
+    </div>
   );
 }

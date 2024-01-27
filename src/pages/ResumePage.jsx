@@ -26,7 +26,7 @@ export default function ResumePage() {
   createListItems(dataSkillItems, 'Databases');
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid from-bottom">
       <div className="row mb-5">
         <h2 className="col text-center merriweather-regular h4">Resume</h2>
       </div>
