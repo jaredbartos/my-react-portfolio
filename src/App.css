@@ -1,7 +1,46 @@
+:root {
+  --onyx: #383D3B;
+  --light-purple: #7272AB;
+  --cyan: #35d2da;
+  --khaki: #C6AC8F;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
 body {
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-style: normal;
+}
+
+.background-cyan {
+  background-color: var(--cyan);
+}
+
+.background-khaki {
+  background-color: var(--khaki);
+}
+
+.background-onyx {
+  background-color: var(--onyx);
+}
+
+.background-light-purple {
+  background-color: var(--light-purple);
+}
+
+.btn {
+  background-color: var(--khaki);
+}
+
+h2 {
+  text-decoration: underline;
 }
 
 .libre-baskerville-regular {
@@ -69,12 +108,16 @@ body {
   animation-delay: 0.1s;
 }
 
-.project,
+.btn,
 .nav-link {
   transition: transform 0.3s;
 }
 
-.project:hover,
+.btn:hover,
 .nav-link:hover {
   transform: translate(3px, 3px);
+}
+
+.btn:hover {
+  background-color: var(--khaki);
 }

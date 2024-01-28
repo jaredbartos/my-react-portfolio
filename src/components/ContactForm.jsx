@@ -15,7 +15,7 @@ function SubmitButton(props) {
     <button
       type="submit"
       onClick={props.handleBtnClick}
-      className="btn btn-primary mt-3"
+      className="btn mt-3"
       // Disable button until form requirements are met
       disabled={props.name && props.email && props.message && props.isValidEmail ? false : true}
     >

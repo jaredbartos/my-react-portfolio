@@ -5,7 +5,7 @@ export default function AboutMePage() {
   return (
     <div className="container from-bottom">
       <div className="row mb-5">
-        <h2 className="col text-center merriweather-regular h4">About Me</h2>
+        <h2 className="col text-center merriweather-regular fs-4">About Me</h2>
       </div>
       <div className="row d-flex justify-content-center">
         <div className="col-5 d-flex align-items-center mb-3">
@@ -17,7 +17,7 @@ export default function AboutMePage() {
         </div>
         <div className="col-lg-7 d-flex align-items-center mb-3">
           <div className="card shadow">
-            <div className="card-body">
+            <div className="card-body background-onyx text-white rounded">
               My name is Jared Bartos. I am a student in the full-stack web development boot camp through the University of Minnesota.
             </div>
           </div>
