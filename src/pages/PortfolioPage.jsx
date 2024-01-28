@@ -8,10 +8,10 @@ export default function PortfolioPage() {
   const projectCards = projects.map((project) => {
     // Set variable for amount of animation delay so it increases
     // for each project card
-    const delay = project.id * 0.1;
+    const delay = project.id * 50;
 
     const styles = {
-      animationDelay: `${delay}s`
+      animationDelay: `${delay}ms`
     };
 
     return (

@@ -80,9 +80,9 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="container-fluid from-bottom">
+    <div className="container-fluid">
       <div className="row mb-5">
-        <h2 className="col text-center merriweather-regular h4">Contact</h2>
+        <h2 className="col text-center merriweather-regular from-bottom h4">Contact</h2>
       </div>
       <div className="container">
         <div className="row m-5 d-flex justify-content-center">

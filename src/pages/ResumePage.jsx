@@ -24,19 +24,19 @@ export default function ResumePage() {
   createListItems(jsSkillItems, 'JavaScript Tools');
 
   return (
-    <div className="container-fluid from-bottom">
+    <div className="container-fluid">
       <div className="row mb-5">
-        <h2 className="col text-center merriweather-regular h4">Resume</h2>
+        <h2 className="col text-center merriweather-regular from-bottom h4">Resume</h2>
       </div>
-      <div className="row mb-5">
+      <div className="row from-bottom delay-1 mb-5">
         <div className="col">
           <p className="text-center">You can download my resume by clicking <a href='/jared_bartos_resume.pdf' title="Click to download" download>here!</a></p>
         </div>
       </div>
       <div className="container">
         <div className="row mb-4">
-          <h3 className="col text-center merriweather-regular h5 mb-4">Skills and Proficiencies</h3>
-          <div className="row d-flex justify-content-center">
+          <h3 className="col text-center merriweather-regular h5 mb-4 from-bottom delay-2">Skills and Proficiencies</h3>
+          <div className="row d-flex from-bottom delay-3 justify-content-center">
             <SkillCard
               category='Languages and Concepts'
               skills={langSkillItems}
