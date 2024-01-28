@@ -17,7 +17,7 @@ export default function Navigation() {
         onClick={() => setActivePath(link.path)}
         // Check if activePath is equal to the path of the link
         // If so, add 'active' class for bootstrap styling
-        className={`mx-4 ${activePath === link.path ? 'nav-link active text-white' : 'nav-link'}`}
+        className={`mx-4 rounded ${activePath === link.path ? 'nav-link active text-white' : 'nav-link'}`}
       >
         {link.title}
       </Link>

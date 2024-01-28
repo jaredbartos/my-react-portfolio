@@ -1,7 +1,7 @@
 :root {
   --onyx: #383D3B;
   --light-purple: #7272AB;
-  --cyan: #35d2da;
+  --cyan: #4dd6dd;
   --khaki: #C6AC8F;
 }
 
@@ -11,6 +11,10 @@
 
 .nav-link:hover {
   color: white;
+}
+
+.active {
+  background-color: var(--onyx)
 }
 
 body {
