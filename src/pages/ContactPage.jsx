@@ -85,7 +85,7 @@ export default function ContactPage() {
         <h2 className="col text-center merriweather-regular from-bottom h4">Contact</h2>
       </div>
       <div className="row mb-5">
-        <p className="text-center">
+        <p className="text-center from-bottom delay-1">
           If you'd like to get in touch with me about employment, collaboration, or any questions about my projects,
           you can email me at <a href="mailto:jaredbartos@gmail.com">jaredbartos@gmail.com</a>. You can also fill out the form below,
           and I'll get back to you as soon as I can.
