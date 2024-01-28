@@ -19,8 +19,13 @@ export default function AboutMePage() {
       <div className="row d-flex justify-content-center">
         <div className="col-lg-7 d-flex from-bottom delay-2 align-items-center mb-3">
           <div className="card shadow">
-            <div className="card-body background-onyx text-white rounded">
-              My name is Jared Bartos. I am a student in the full-stack web development boot camp through the University of Minnesota.
+            <div className="card-header text-white background-onyx">
+              Bio
+            </div>
+            <div className="card-body rounded">
+              My name is Jared Bartos, and I am a student in the full-stack web development boot camp through the University of Minnesota. I grew up in a very small town
+              in rural northeast Nebraska and attended the University of Nebraska-Lincoln, majoring in Psychology, before eventually moving to Minnesota. After several years
+              in the North Star State, I finally found my true calling as a developer.
             </div>
           </div>
         </div>
