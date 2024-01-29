@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Import link data
-import { links } from '../assets/js/data';
+import { links } from '../assets/js/linkData';
 
 export default function Navigation() {
   // Declare useState variables for the active location path and set value to initial path
@@ -19,7 +20,7 @@ export default function Navigation() {
         // If so, add 'active' class for bootstrap styling
         className={`mx-4 rounded ${activePath === link.path ? 'nav-link active text-white' : 'nav-link'}`}
       >
-        {link.title}
+        <FontAwesomeIcon icon={link.icon}/> {link.title}
       </Link>
     );
   });  

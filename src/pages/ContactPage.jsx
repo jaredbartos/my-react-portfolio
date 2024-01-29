@@ -4,6 +4,9 @@ import { useState } from "react";
 import { validateEmail } from "../assets/js/utils";
 // Import ContactForm component
 import ContactForm from "../components/ContactForm";
+// Import icon data
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { icon, icons } from '../assets/js/iconData';
 
 // Contact Page component
 export default function ContactPage() {
@@ -82,7 +85,9 @@ export default function ContactPage() {
   return (
     <div className="container-fluid">
       <div className="row mb-5">
-        <h2 className="col text-center merriweather-regular from-bottom h4">Contact</h2>
+        <h2 className="col text-center merriweather-regular from-bottom h4">
+          <FontAwesomeIcon icon={icon(icons.faEnvelope)}/> Contact
+        </h2>
       </div>
       <div className="container-lg">
         <p className="from-bottom delay-1">

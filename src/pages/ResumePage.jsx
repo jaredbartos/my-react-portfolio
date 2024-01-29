@@ -1,7 +1,10 @@
 // Import skill data
-import { skills } from '../assets/js/data';
+import { skills } from '../assets/js/skillData';
 // Import SkillCard component
 import SkillCard from '../components/SkillCard';
+// Import icon data
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { icon, icons } from '../assets/js/iconData';
 
 // Resume Page Component
 export default function ResumePage() {
@@ -26,7 +29,9 @@ export default function ResumePage() {
   return (
     <div className="container-fluid">
       <div className="row mb-5">
-        <h2 className="col text-center merriweather-regular from-bottom h4">Resume</h2>
+        <h2 className="col text-center merriweather-regular from-bottom h4">
+          <FontAwesomeIcon icon={icon(icons.faFile)}/> Resume
+        </h2>
       </div>
       <div className="row from-bottom delay-1 mb-5">
         <div className="col">

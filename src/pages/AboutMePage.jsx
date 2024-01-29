@@ -1,11 +1,15 @@
 // Import personal photo for page
 import photo from '../assets/images/my_photo.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { icon, icons } from '../assets/js/iconData'
 
 export default function AboutMePage() {
   return (
     <div className="container">
       <div className="row mb-5">
-        <h2 className="col text-center merriweather-regular from-bottom fs-4">About Me</h2>
+        <h2 className="col text-center merriweather-regular from-bottom fs-4">
+          <FontAwesomeIcon icon={icon(icons.faCircleInfo)}/> About Me
+        </h2>
       </div>
       <div className="row">
         <div className="col d-flex from-bottom delay-1 justify-content-center mb-3">

@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { icon, icons } from '../assets/js/iconData';
+
 // React component to conditionally render the label for email field
 function EmailLabel(props) {
   if (props.emptyFields.includes('email')) {
@@ -19,7 +22,7 @@ function SubmitButton(props) {
       // Disable button until form requirements are met
       disabled={props.name && props.email && props.message && props.isValidEmail ? false : true}
     >
-      Submit
+      <FontAwesomeIcon icon={icon(icons.faPaperPlane)}/> Submit
     </button>
   );
 }
