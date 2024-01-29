@@ -8,7 +8,6 @@ export default function Project({ image, title, deployedLink, githubLink }) {
           <a href={deployedLink} className="btn me-2" target="_blank" rel="noreferrer">Visit the App</a>
           <a href={githubLink} className="btn" target="_blank" rel="noreferrer">View Repo on GitHub</a>
         </div>
-
       </div>
     </div>
   );
