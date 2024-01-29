@@ -19,6 +19,7 @@ body {
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-style: normal;
+  font-size: 18px
 }
 
 .background-cyan {
@@ -43,12 +44,6 @@ body {
 
 h2 {
   text-decoration: underline;
-}
-
-p,
-a,
-.list-group-item {
-  font-size: 18px;
 }
 
 .libre-baskerville-regular {

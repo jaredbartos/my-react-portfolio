@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 export default function Header() {
   const styles = {
     h1: {
-      fontSize: '200%',
+      fontSize: '175%',
     }
   };
 
