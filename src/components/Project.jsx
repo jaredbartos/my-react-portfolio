@@ -1,7 +1,7 @@
 export default function Project({ image, title, deployedLink, githubLink }) {
   return (
     <div className="card m-3 shadow project">
-      <img src={image} className="card-img-top" alt={`${title} Screenshot`} />
+      <img width="640px" src={image} className="card-img-top" alt={`${title} Screenshot`} />
       <div className="card-body background-onyx rounded-bottom border-top">
         <h3 className="card-title h5 text-center text-white">{title}</h3>
         <div className="d-flex justify-content-center">
