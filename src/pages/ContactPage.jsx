@@ -92,8 +92,8 @@ export default function ContactPage() {
         </p>
       </div>
       <div className="container-xl">
-        <div className="row m-5 d-flex justify-content-center">
-          <div className="col-xxl-6 col-lg-8">
+        <div className="row mt-5 d-flex justify-content-center">
+          <div className="col-xxl-6 col-lg-8 col-md-10">
             <ContactForm
             handleInputChange={handleInputChange}
             handleBlur={handleBlur}
