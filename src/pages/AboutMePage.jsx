@@ -23,7 +23,7 @@ export default function AboutMePage() {
       <div className="row d-flex justify-content-center">
         <div className="col-lg-7 d-flex from-bottom delay-2 align-items-center mb-3">
           <div className="card shadow">
-            <div className="card-header text-white background-onyx">
+            <div className="card-header background-khaki">
               Bio
             </div>
             <div className="card-body rounded">

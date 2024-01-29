@@ -1,10 +1,8 @@
 :root {
   --onyx: #383D3B;
-  --light-purple: #7272AB;
   --cyan: #4dd6dd;
   --khaki: #C6AC8F;
   --btn-hover: #e2c4a4;
-  --nav-hover: #434a47;
 }
 
 .nav-link {

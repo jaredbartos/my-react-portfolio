@@ -28,7 +28,7 @@ export default function PortfolioPage() {
   return (
     <div className="container-fluid from-bottom">
       <div className="row mb-5">
-        <h2 className="col text-center merriweather-regular h4">
+        <h2 className="col text-center merriweather-regular fs-4">
           <FontAwesomeIcon icon={icon(icons.faFolderOpen)}/> Portfolio
         </h2>
       </div>

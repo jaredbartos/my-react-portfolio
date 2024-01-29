@@ -29,7 +29,7 @@ export default function ResumePage() {
   return (
     <div className="container-fluid">
       <div className="row mb-5">
-        <h2 className="col text-center merriweather-regular from-bottom h4">
+        <h2 className="col text-center merriweather-regular from-bottom fs-4">
           <FontAwesomeIcon icon={icon(icons.faFile)}/> Resume
         </h2>
       </div>
