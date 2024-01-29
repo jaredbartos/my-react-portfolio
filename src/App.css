@@ -45,6 +45,12 @@ h2 {
   text-decoration: underline;
 }
 
+p,
+a,
+.list-group-item {
+  font-size: 18px;
+}
+
 .libre-baskerville-regular {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
