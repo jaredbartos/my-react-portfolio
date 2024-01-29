@@ -43,6 +43,12 @@ body {
   font-size: 18px;
 }
 
+#nameInput,
+#emailInput,
+#messageInput {
+  font-size: 18px;
+}
+
 h2 {
   text-decoration: underline;
 }
