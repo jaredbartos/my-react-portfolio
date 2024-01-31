@@ -1,7 +1,7 @@
 // Import personal photo for page
 import photo from '../assets/images/my_photo.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon, icons } from '../assets/js/iconData'
+import { icon, icons } from '../assets/js/iconData';
 
 export default function AboutMePage() {
   return (
@@ -21,7 +21,7 @@ export default function AboutMePage() {
         </div>
       </div>
       <div className="row d-flex justify-content-center">
-        <div className="col-lg-7 d-flex from-bottom delay-2 align-items-center mb-3">
+        <div className="col-lg-7 d-flex from-bottom delay-2 align-items-center mb-5">
           <div className="card shadow">
             <div className="card-header background-khaki">
               Bio
@@ -35,8 +35,7 @@ export default function AboutMePage() {
             </div>
           </div>
         </div>
-      </div>
-      
+      </div>    
     </div>
   );
 }
