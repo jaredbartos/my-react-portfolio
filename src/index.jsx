@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     // Children elements will render in place of Outlet in App component
     children: [
       {
-        path: '/',
+        index: true,
         element: <AboutMePage />,
       },
       {
