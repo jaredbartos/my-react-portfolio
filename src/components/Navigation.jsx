@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { links } from '../assets/js/linkData';
 
 export default function Navigation() {
-  // Declare useState variables for the active location path and set value to initial path
+  // Declare the active location path and set value to initial path
   const activePath = useLocation().pathname;
 
   // Map through link data to create link elements for use in navigation
