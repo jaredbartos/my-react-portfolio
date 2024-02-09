@@ -2,14 +2,14 @@ require('dotenv').config();
 const { transporter } = require('../config/config');
 
 const sendForm = (req, res) => {
-  const { formName, formEmail, formMessage } = req.body;
+  const { name: formName, email: formEmail, message: formMessage } = req.body;
   const myEmail = process.env.EMAIL;
   const formMailTextContent = `Name: ${formName}
 Email: ${formEmail}
 Message: ${formMessage}`;
   const formMailHtmlContent = `<p>Name: ${formName}<br>
-  Email: ${formEmail}<br>
-  Message: ${formMessage}</p>`;
+Email: ${formEmail}<br>
+Message: ${formMessage}</p>`;
   const formMailProps = {
     from: formEmail,
     to: myEmail,

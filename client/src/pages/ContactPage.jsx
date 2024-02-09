@@ -18,6 +18,7 @@ export default function ContactPage() {
   const [emptyFields, setEmptyFields] = useState([]);
   // Create useState variables to keep track of email validation
   const [isValidEmail, setIsValidEmail] = useState(true);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   // Function to edit emptyFields state
   const checkForEmptyFields = (field, value) => {
@@ -74,12 +75,28 @@ export default function ContactPage() {
     checkForEmptyFields(inputType, inputValue);
   };
 
-  // Handler function for button click
-  const handleBtnClick = (e) => {
+  const sendForm = async () => {
+    const response = await fetch('/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name, email, message })
+    });
+
+    if (response.ok) {
+      setFormSubmitted(true);
+      setName('');
+      setEmail('');
+      setMessage('');
+    } else {
+      console.log('Something went wrong!');
+    }
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setName('');
-    setEmail('');
-    setMessage('');
+    await sendForm();
   };
 
   return (
@@ -99,16 +116,22 @@ export default function ContactPage() {
       <div className="container-xl">
         <div className="row mt-5 d-flex justify-content-center">
           <div className="col-xxl-6 col-lg-8 col-md-10">
-            <ContactForm
-            handleInputChange={handleInputChange}
-            handleBlur={handleBlur}
-            handleBtnClick={handleBtnClick}
-            name={name}
-            email={email}
-            message={message}
-            isValidEmail={isValidEmail}
-            emptyFields={emptyFields}
-            />
+            {
+              formSubmitted
+              ?
+              <p className="text-center">Your form has been submitted. Thank you!</p>
+              :
+              <ContactForm
+              handleInputChange={handleInputChange}
+              handleBlur={handleBlur}
+              handleSubmit={handleSubmit}
+              name={name}
+              email={email}
+              message={message}
+              isValidEmail={isValidEmail}
+              emptyFields={emptyFields}
+              />
+            }
           </div>
         </div>
       </div>
