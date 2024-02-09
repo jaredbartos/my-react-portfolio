@@ -79,5 +79,15 @@ export const skills = [
     id: 16,
     name: 'Handlebars.js',
     category: 'JavaScript Tools'
+  },
+  {
+    id: 17,
+    name: 'Redux.js',
+    category: 'JavaScript Tools'
+  },
+  {
+    id: 18,
+    name: 'GraphQL',
+    category: 'Languages and Concepts'
   }
 ];
