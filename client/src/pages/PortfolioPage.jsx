@@ -4,6 +4,7 @@ import { projects } from '../assets/js/projectData';
 import Project from '../components/Project';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { icon, icons } from '../assets/js/iconData';
+import heatCheckScreenshot from '../assets/images/screenshots/heatcheck_screenshot.png';
 
 export default function PortfolioPage() {
   // Map through project data to create project cards
@@ -34,6 +35,15 @@ export default function PortfolioPage() {
       </div>
       <div className="container">
         <div className="row d-flex flex-wrap justify-content-center">
+          {/* Display featured project first */}
+          <div className="col-12 from-bottom">
+            <Project
+              image={heatCheckScreenshot}
+              title='HeatCheck'
+              deployedLink='https://heatcheck.onrender.com/'
+              githubLink='https://github.com/jaredbartos/heat-check'
+            />
+          </div>
           {projectCards}
         </div>
       </div>
