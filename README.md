@@ -5,7 +5,7 @@
 
 ## Link
 
-[Jared Bartos - Portfolio](https://jaredbartos.netlify.app/)
+[Jared Bartos - Portfolio](https://jaredbartos-portfolio.onrender.com/)
 
 ## Description
 
