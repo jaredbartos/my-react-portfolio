@@ -28,7 +28,7 @@ export default function AboutMePage() {
             </div>
             <div className="card-body rounded">
               <p>
-                My name is Jared Bartos, and I am freelance web developer based out of the Minneapolis-St. Paul area. I grew up in a very small town
+                My name is Jared Bartos, and I am a freelance web developer based out of the Minneapolis-St. Paul area. I grew up in a very small town
                 in rural northeast Nebraska and attended the University of Nebraska-Lincoln, majoring in Psychology, before eventually moving to Minnesota. After several years
                 in the North Star State, I took the leap into the full-stack web development boot camp through the University of Minnesota. Six months later, I was awarded
                 a certificate in the MERN stack of development, beginning my true calling.
