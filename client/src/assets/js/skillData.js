@@ -89,5 +89,10 @@ export const skills = [
     id: 18,
     name: 'GraphQL',
     category: 'Languages and Concepts'
+  },
+  {
+    id: 19,
+    name: 'Python',
+    category: 'Languages and Concepts'
   }
 ];
