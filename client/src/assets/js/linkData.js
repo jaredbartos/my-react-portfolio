@@ -1,5 +1,5 @@
 // Import icon data
-import { icon, icons } from './iconData'
+import { icon, icons } from './iconData';
 
 // Array to use for nav links
 export const links = [

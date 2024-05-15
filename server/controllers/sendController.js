@@ -42,7 +42,7 @@ Message Details
 Name: ${formName}
 Email: ${formEmail}
 Message: ${formMessage}`;
-      
+
       const replyMailHtmlContent = `<p>Hi ${formName},<br>
 <br>
 Thank you for sending me a message. I will get back to you as soon as I can.<br>
@@ -74,6 +74,6 @@ Message: ${formMessage}</p?`;
       });
     }
   });
-}
+};
 
 module.exports = { sendForm };

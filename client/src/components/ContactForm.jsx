@@ -16,13 +16,17 @@ function EmailLabel(props) {
 function SubmitButton(props) {
   return (
     <button
-      type="submit"
+      type='submit'
       onClick={props.handleSubmit}
-      className="btn mt-3"
+      className='btn mt-3'
       // Disable button until form requirements are met
-      disabled={props.name && props.email && props.message && props.isValidEmail ? false : true}
+      disabled={
+        props.name && props.email && props.message && props.isValidEmail
+          ? false
+          : true
+      }
     >
-      <FontAwesomeIcon icon={icon(icons.faPaperPlane)}/> Submit
+      <FontAwesomeIcon icon={icon(icons.faPaperPlane)} /> Submit
     </button>
   );
 }
@@ -33,48 +37,63 @@ export default function ContactForm(props) {
 
   return (
     <form onBlur={props.handleBlur}>
-      <div className="form-floating from-bottom delay-2 mb-3">
+      <div className='form-floating from-bottom delay-2 mb-3'>
         <input
-          type="text"
+          type='text'
           onChange={props.handleInputChange}
-          name="name"
+          name='name'
           // If field is empty onBlur, use invalid form bootstrap class
-          className={props.emptyFields.includes('name') ? "form-control is-invalid" : "form-control"}
-          id="nameInput"
-          placeholder="Name"
+          className={
+            props.emptyFields.includes('name')
+              ? 'form-control is-invalid'
+              : 'form-control'
+          }
+          id='nameInput'
+          placeholder='Name'
           value={props.name}
         />
-        <label htmlFor="nameInput">
+        <label htmlFor='nameInput'>
           {props.emptyFields.includes('name') ? 'Name is required' : 'Name'}
         </label>
       </div>
-      <div className="form-floating from-bottom delay-3 mb-3">
+      <div className='form-floating from-bottom delay-3 mb-3'>
         <input
-          type="email"
+          type='email'
           onChange={props.handleInputChange}
-          name="email"
+          name='email'
           // If field is empty onBlur, use invalid form bootstrap class
-          className={props.emptyFields.includes('email') || !props.isValidEmail ? "form-control is-invalid" : "form-control"}
-          id="emailInput"
-          placeholder="name@example.com"
-          value={props.email} />
-        <label htmlFor="emailInput">
+          className={
+            props.emptyFields.includes('email') || !props.isValidEmail
+              ? 'form-control is-invalid'
+              : 'form-control'
+          }
+          id='emailInput'
+          placeholder='name@example.com'
+          value={props.email}
+        />
+        <label htmlFor='emailInput'>
           <EmailLabel {...props} />
         </label>
       </div>
-      <div className="form-floating from-bottom delay-4">
+      <div className='form-floating from-bottom delay-4'>
         <textarea
           // If field is empty onBlur, use invalid form bootstrap class
-          className={props.emptyFields.includes('message') ? "form-control is-invalid" : "form-control"}
+          className={
+            props.emptyFields.includes('message')
+              ? 'form-control is-invalid'
+              : 'form-control'
+          }
           onChange={props.handleInputChange}
-          name="message"
-          placeholder="Leave a message here"
-          id="messageInput"
+          name='message'
+          placeholder='Leave a message here'
+          id='messageInput'
           value={props.message}
-          style={messageStyle}>
-        </textarea>
-        <label htmlFor="messageInput">
-          {props.emptyFields.includes('message') ? 'Message is required' : 'Message'}
+          style={messageStyle}
+        ></textarea>
+        <label htmlFor='messageInput'>
+          {props.emptyFields.includes('message')
+            ? 'Message is required'
+            : 'Message'}
         </label>
       </div>
       <SubmitButton {...props} />

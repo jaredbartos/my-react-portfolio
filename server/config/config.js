@@ -7,8 +7,8 @@ const transport = {
   port: process.env.MAILPORT,
   secure: true,
   auth: {
-      user: process.env.USER,
-      pass: process.env.PASS,
+    user: process.env.USER,
+    pass: process.env.PASS
   }
 };
 

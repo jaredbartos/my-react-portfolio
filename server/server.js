@@ -18,13 +18,13 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.listen(PORT, () =>  {
-  transporter.verify((error) => {
+app.listen(PORT, () => {
+  transporter.verify(error => {
     if (error) {
       console.log(error);
     } else {
       console.log('Server is ready to send emails');
     }
-  })
-  console.log(`Back-end is listening on port ${PORT}`)
+  });
+  console.log(`Back-end is listening on port ${PORT}`);
 });

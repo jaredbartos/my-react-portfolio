@@ -94,5 +94,10 @@ export const skills = [
     id: 19,
     name: 'Python',
     category: 'Languages and Concepts'
+  },
+  {
+    id: 20,
+    name: 'TypeScript',
+    category: 'Languages and Concepts'
   }
 ];

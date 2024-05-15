@@ -1,5 +1,5 @@
 // Import icons
-import { icon } from '@fortawesome/fontawesome-svg-core'
+import { icon } from '@fortawesome/fontawesome-svg-core';
 import {
   faCircleInfo,
   faEnvelope,
@@ -20,6 +20,6 @@ const icons = {
   faGithub,
   faDownload,
   faPaperPlane
-}
+};
 
 export { icon, icons };

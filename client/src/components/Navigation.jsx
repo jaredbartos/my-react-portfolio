@@ -15,15 +15,17 @@ export default function Navigation() {
         to={link.path}
         // Check if activePath is equal to the path of the link
         // If so, add 'active' class for bootstrap styling
-        className={`mx-4 rounded ${activePath === link.path ? 'nav-link active text-white' : 'nav-link'}`}
+        className={`mx-4 rounded ${
+          activePath === link.path ? 'nav-link active text-white' : 'nav-link'
+        }`}
       >
-        <FontAwesomeIcon icon={link.icon}/> {link.title}
+        <FontAwesomeIcon icon={link.icon} /> {link.title}
       </Link>
     );
-  });  
+  });
 
   return (
-    <ul className="merriweather-regular navbar-nav fs-5 ms-5">
+    <ul className='merriweather-regular navbar-nav fs-5 ms-5'>
       {/* Insert links into nav */}
       {linkElements}
     </ul>

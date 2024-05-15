@@ -1,7 +1,7 @@
 :root {
-  --onyx: #383D3B;
+  --onyx: #383d3b;
   --cyan: #4dd6dd;
-  --khaki: #C6AC8F;
+  --khaki: #c6ac8f;
   --btn-hover: #e2c4a4;
 }
 
@@ -10,14 +10,14 @@
 }
 
 .active {
-  background-color: var(--onyx)
+  background-color: var(--onyx);
 }
 
 body {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .background-cyan {
@@ -48,19 +48,19 @@ body {
 }
 
 .libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .merriweather-regular {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .cormorant-garamond-regular {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
   font-style: normal;
 }
