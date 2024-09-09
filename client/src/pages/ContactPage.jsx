@@ -103,7 +103,7 @@ export default function ContactPage() {
     <div className='container-fluid'>
       <div className='row mb-5'>
         <h2 className='col text-center merriweather-regular from-bottom fs-4'>
-          <FontAwesomeIcon icon={icon(icons.faEnvelope)} /> Contact
+          <FontAwesomeIcon className='icon-color me-2' icon={icon(icons.faEnvelope)} />Contact
         </h2>
       </div>
       <div className='container-lg'>

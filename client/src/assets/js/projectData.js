@@ -12,8 +12,7 @@ export const projects = [
     id: 1,
     title: 'The Tech Blog',
     image: techBlogScreenshot,
-    deployedLink:
-      'https://whispering-headland-36327-fcf93ff6f15e.herokuapp.com/',
+    deployedLink: 'https://tech-blog-production-bd89.up.railway.app/',
     githubLink: 'https://github.com/jaredbartos/tech-blog'
   },
   {

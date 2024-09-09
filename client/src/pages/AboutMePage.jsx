@@ -8,7 +8,7 @@ export default function AboutMePage() {
     <div className='container'>
       <div className='row mb-5'>
         <h2 className='col text-center merriweather-regular from-bottom fs-4'>
-          <FontAwesomeIcon icon={icon(icons.faCircleInfo)} /> About Me
+          <FontAwesomeIcon className='icon-color me-2' icon={icon(icons.faCircleInfo)} />About Me
         </h2>
       </div>
       <div className='row'>
@@ -29,7 +29,7 @@ export default function AboutMePage() {
       <div className='row d-flex justify-content-center'>
         <div className='col-lg-7 d-flex from-bottom delay-2 align-items-center mb-5'>
           <div className='card shadow'>
-            <div className='card-header background-khaki'>Bio</div>
+            <div className='card-header background-purple text-white'>Bio</div>
             <div className='card-body rounded'>
               <p>
                 My name is Jared Bartos, and I am a freelance web developer

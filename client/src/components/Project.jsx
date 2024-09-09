@@ -15,13 +15,13 @@ export default function Project({ image, title, deployedLink, githubLink }) {
         <div className='d-flex justify-content-center'>
           <a
             href={deployedLink}
-            className='btn me-2'
+            className='btn me-2 text-white'
             target='_blank'
             rel='noreferrer'
           >
             <FontAwesomeIcon icon={icon(icons.faGlobe)} /> Visit the App
           </a>
-          <a href={githubLink} className='btn' target='_blank' rel='noreferrer'>
+          <a href={githubLink} className='btn text-white' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon icon={icon(icons.faGithub)} /> View Repo on GitHub
           </a>
         </div>

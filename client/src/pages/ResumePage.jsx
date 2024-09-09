@@ -34,7 +34,7 @@ export default function ResumePage() {
     <div className='container-fluid'>
       <div className='row mb-5'>
         <h2 className='col text-center merriweather-regular from-bottom fs-4'>
-          <FontAwesomeIcon icon={icon(icons.faFile)} /> Resume
+          <FontAwesomeIcon className='icon-color me-2' icon={icon(icons.faFile)} />Resume
         </h2>
       </div>
       <div className='row from-bottom delay-1 mb-5'>

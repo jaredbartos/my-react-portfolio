@@ -8,28 +8,14 @@ export default function Header() {
   };
 
   return (
-    <nav className='navbar navbar-expand-lg pb-2 mb-5 background-cyan'>
-      <div className='container-fluid'>
-        <h1
-          style={styles.h1}
-          className='libre-baskerville-regular navbar-brand me-5 ms-3 mt-3 pb-5'
-        >
+    <nav className="navbar-expand-lg mb-5 border-bottom border-2 border-purple">
+      <div className="container text-center p-3">
+        <h1 style={styles.h1} className="libre-baskerville-regular">
           Jared Bartos
         </h1>
-        <button
-          className='navbar-toggler'
-          type='button'
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarNav'
-          aria-controls='navbarNav'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-        >
-          <span className='navbar-toggler-icon'></span>
-        </button>
-        <div className='collapse navbar-collapse' id='navbarNav'>
-          <Navigation />
-        </div>
+      </div>
+      <div className="container my-3" id="navbarNav">
+        <Navigation />
       </div>
     </nav>
   );

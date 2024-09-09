@@ -2,7 +2,8 @@
   --onyx: #383d3b;
   --cyan: #4dd6dd;
   --khaki: #c6ac8f;
-  --btn-hover: #e2c4a4;
+  --btn-hover: #342c6a;
+  --purple: #52489c;
 }
 
 .nav-link {
@@ -10,7 +11,7 @@
 }
 
 .active {
-  background-color: var(--onyx);
+  background-color: var(--purple);
 }
 
 body {
@@ -18,26 +19,33 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
+  min-height: 100vh;
+  background: rgb(180, 180, 180);
+  background: linear-gradient(
+    180deg,
+    rgba(180, 180, 180, 1) 0%,
+    rgba(220, 220, 220, 1) 100%
+  );
 }
 
-.background-cyan {
-  background-color: var(--cyan);
+ul {
+  padding: 0px;
 }
 
-.background-khaki {
-  background-color: var(--khaki);
+.border-purple {
+  border-color: var(--purple) !important;
+}
+
+.background-purple {
+  background-color: var(--purple);
 }
 
 .background-onyx {
   background-color: var(--onyx);
 }
 
-.background-light-purple {
-  background-color: var(--light-purple);
-}
-
 .btn {
-  background-color: var(--khaki);
+  background-color: var(--purple);
   font-size: 18px;
 }
 
@@ -45,6 +53,20 @@ body {
 #emailInput,
 #messageInput {
   font-size: 18px;
+}
+
+.icon-color {
+  color: var(--purple);
+}
+
+.icon-position {
+  margin-right: 8px;
+  position: relative;
+  bottom: 2px;
+}
+
+.text-purple {
+  color: var(--purple);
 }
 
 .libre-baskerville-regular {
@@ -140,4 +162,8 @@ body {
 
 .delay-4 {
   animation-delay: 300ms;
+}
+
+.delay-5 {
+  animation-delay: 350ms;
 }
