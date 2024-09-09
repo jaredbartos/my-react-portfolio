@@ -135,12 +135,12 @@ ul {
 }
 
 .btn,
-.nav-link {
+.project-link {
   transition: transform 0.3s;
 }
 
 .btn:hover,
-.nav-link:hover {
+.project-link:hover {
   transform: translate(3px, 3px);
 }
 

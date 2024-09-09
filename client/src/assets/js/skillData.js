@@ -99,5 +99,10 @@ export const skills = [
     id: 20,
     name: 'TypeScript',
     category: 'Languages and Concepts'
+  },
+  {
+    id: 21,
+    name: 'Next.js',
+    category: 'JavaScript Tools'
   }
 ];

@@ -4,37 +4,35 @@ import { IconContext } from 'react-icons';
 
 export default function Project({ image, title, deployedLink, githubLink }) {
   return (
-    <div className="card m-3 shadow project">
+    <div className="card m-3 shadow rounded border-0 project">
       <img
         width="640px"
         src={image}
         className="card-img-top"
         alt={`${title} Screenshot`}
       />
-      <div className="card-body background-onyx rounded-bottom border-top">
-        <h3 className="card-title h5 text-center text-white">{title}</h3>
+      <div className="card-body background-purple rounded-bottom-1 border-top border-purple">
+        <h3 className="card-title h4 text-center text-white">{title}</h3>
         <div className="d-flex justify-content-center">
           <a
             href={deployedLink}
-            className="btn me-2 text-white"
+            className="me-5 fs-2 project-link text-white"
             target="_blank"
             rel="noreferrer"
           >
             <IconContext.Provider value={{ className: 'icon-position' }}>
               <FaGlobe />
             </IconContext.Provider>
-            Visit the App
           </a>
           <a
             href={githubLink}
-            className="btn text-white"
+            className="text-white project-link fs-2"
             target="_blank"
             rel="noreferrer"
           >
             <IconContext.Provider value={{ className: 'icon-position' }}>
               <FaGithub />
             </IconContext.Provider>
-            View Repo on GitHub
           </a>
         </div>
       </div>

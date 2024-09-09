@@ -18,7 +18,7 @@ function SubmitButton(props) {
     <button
       type="submit"
       onClick={props.handleSubmit}
-      className="btn mt-3 text-white from-bottom delay-5"
+      className="btn mt-3 text-white shadow from-bottom delay-5"
       style={{ opacity: 0 }}
       // Disable button until form requirements are met
       disabled={
@@ -41,7 +41,7 @@ export default function ContactForm(props) {
 
   return (
     <form onBlur={props.handleBlur}>
-      <div className="form-floating from-bottom delay-2 mb-3">
+      <div className="form-floating shadow from-bottom delay-2 mb-3">
         <input
           type="text"
           onChange={props.handleInputChange}
@@ -60,7 +60,7 @@ export default function ContactForm(props) {
           {props.emptyFields.includes('name') ? 'Name is required' : 'Name'}
         </label>
       </div>
-      <div className="form-floating from-bottom delay-3 mb-3">
+      <div className="form-floating shadow from-bottom delay-3 mb-3">
         <input
           type="email"
           onChange={props.handleInputChange}
@@ -79,7 +79,7 @@ export default function ContactForm(props) {
           <EmailLabel {...props} />
         </label>
       </div>
-      <div className="form-floating from-bottom delay-4">
+      <div className="form-floating shadow from-bottom delay-4">
         <textarea
           // If field is empty onBlur, use invalid form bootstrap class
           className={
