@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaCircleInfo } from 'react-icons/fa6';
 import { FaFolderOpen } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa6';

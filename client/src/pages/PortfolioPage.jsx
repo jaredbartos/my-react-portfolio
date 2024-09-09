@@ -2,9 +2,9 @@
 import { projects } from '../assets/js/projectData';
 // Import Project component
 import Project from '../components/Project';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon, icons } from '../assets/js/iconData';
 import heatCheckScreenshot from '../assets/images/screenshots/heatcheck_screenshot.png';
+import { FaFolderOpen } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 export default function PortfolioPage() {
   // Map through project data to create project cards
@@ -28,10 +28,11 @@ export default function PortfolioPage() {
     <div className="container-fluid from-bottom">
       <div className="row mb-5">
         <h2 className="col text-center merriweather-regular fs-4">
-          <FontAwesomeIcon
-            className="icon-color me-2"
-            icon={icon(icons.faFolderOpen)}
-          />
+          <IconContext.Provider
+            value={{ className: 'icon-position icon-color' }}
+          >
+            <FaFolderOpen />
+          </IconContext.Provider>
           Portfolio
         </h2>
       </div>

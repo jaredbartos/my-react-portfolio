@@ -5,6 +5,8 @@ import SkillCard from '../components/SkillCard';
 // Import icon data
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { icon, icons } from '../assets/js/iconData';
+import { BsFillFileTextFill } from 'react-icons/bs';
+import { IconContext } from 'react-icons';
 
 // Resume Page Component
 export default function ResumePage() {
@@ -17,7 +19,7 @@ export default function ResumePage() {
     for (let skill of skills) {
       if (skill.category === type) {
         const listItem = (
-          <li key={skill.id} className='list-group-item'>
+          <li key={skill.id} className="list-group-item">
             {skill.name}
           </li>
         );
@@ -31,19 +33,24 @@ export default function ResumePage() {
   createListItems(jsSkillItems, 'JavaScript Tools');
 
   return (
-    <div className='container-fluid'>
-      <div className='row mb-5'>
-        <h2 className='col text-center merriweather-regular from-bottom fs-4'>
-          <FontAwesomeIcon className='icon-color me-2' icon={icon(icons.faFile)} />Resume
+    <div className="container-fluid">
+      <div className="row mb-5">
+        <h2 className="col text-center merriweather-regular from-bottom fs-4">
+          <IconContext.Provider
+            value={{ className: 'icon-position icon-color' }}
+          >
+            <BsFillFileTextFill />
+          </IconContext.Provider>
+          Resume
         </h2>
       </div>
-      <div className='row from-bottom delay-1 mb-5'>
-        <div className='col'>
-          <p className='text-center'>
+      <div className="row from-bottom delay-1 mb-5">
+        <div className="col">
+          <p className="text-center">
             You can download my resume by clicking{' '}
             <a
-              href='/jared_bartos_resume.pdf'
-              title='Click to download'
+              href="/jared_bartos_resume.pdf"
+              title="Click to download"
               download
             >
               here!
@@ -51,17 +58,17 @@ export default function ResumePage() {
           </p>
         </div>
       </div>
-      <div className='container'>
-        <div className='row mb-4'>
-          <h3 className='col text-center merriweather-regular h5 mb-4 from-bottom delay-2'>
+      <div className="container">
+        <div className="row mb-4">
+          <h3 className="col text-center merriweather-regular h5 mb-4 from-bottom delay-2">
             Skills and Proficiencies
           </h3>
-          <div className='row d-flex from-bottom delay-3 justify-content-center'>
+          <div className="row d-flex from-bottom delay-3 justify-content-center">
             <SkillCard
-              category='Languages and Concepts'
+              category="Languages and Concepts"
               skills={langSkillItems}
             />
-            <SkillCard category='JavaScript Tools' skills={jsSkillItems} />
+            <SkillCard category="JavaScript Tools" skills={jsSkillItems} />
           </div>
         </div>
       </div>

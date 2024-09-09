@@ -1,36 +1,41 @@
 // Import personal photo for page
 import photo from '../assets/images/my_photo.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon, icons } from '../assets/js/iconData';
+import { FaCircleInfo } from 'react-icons/fa6';
+import { IconContext } from 'react-icons';
 
 export default function AboutMePage() {
   return (
-    <div className='container'>
-      <div className='row mb-5'>
-        <h2 className='col text-center merriweather-regular from-bottom fs-4'>
-          <FontAwesomeIcon className='icon-color me-2' icon={icon(icons.faCircleInfo)} />About Me
+    <div className="container">
+      <div className="row mb-5">
+        <h2 className="col text-center merriweather-regular from-bottom fs-4">
+          <IconContext.Provider
+            value={{ className: 'icon-position icon-color' }}
+          >
+            <FaCircleInfo />
+          </IconContext.Provider>
+          About Me
         </h2>
       </div>
-      <div className='row'>
-        <div className='col d-flex from-bottom delay-1 justify-content-center mb-3'>
-          <div className='card shadow'>
-            <div className='card-body p-0'>
+      <div className="row">
+        <div className="col d-flex from-bottom delay-1 justify-content-center mb-3">
+          <div className="card shadow">
+            <div className="card-body p-0">
               <img
                 src={photo}
-                width='240px'
-                className='img rounded'
-                alt='Me wearing a baseball cap with trees in the background'
-                title='A photo of me'
+                width="240px"
+                className="img rounded"
+                alt="Me wearing a baseball cap with trees in the background"
+                title="A photo of me"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className='row d-flex justify-content-center'>
-        <div className='col-lg-7 d-flex from-bottom delay-2 align-items-center mb-5'>
-          <div className='card shadow'>
-            <div className='card-header background-purple text-white'>Bio</div>
-            <div className='card-body rounded'>
+      <div className="row d-flex justify-content-center">
+        <div className="col-lg-7 d-flex from-bottom delay-2 align-items-center mb-5">
+          <div className="card shadow">
+            <div className="card-header background-purple text-white">Bio</div>
+            <div className="card-body rounded">
               <p>
                 My name is Jared Bartos, and I am a freelance web developer
                 based out of the Minneapolis-St. Paul area. I grew up in a very

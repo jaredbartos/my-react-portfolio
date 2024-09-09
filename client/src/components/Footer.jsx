@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
       <div className='row'>
-        <p className='col text-center'>&copy; 2024 - Built by Jared Bartos</p>
+        <p className='col text-center'>&copy; 2024 - Jared Bartos</p>
       </div>
     </div>
   );
