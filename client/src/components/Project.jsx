@@ -16,7 +16,7 @@ export default function Project({ image, title, deployedLink, githubLink }) {
         <div className="d-flex justify-content-center">
           <a
             href={deployedLink}
-            className="me-5 fs-2 project-link text-white"
+            className="me-5 fs-2 text-white"
             target="_blank"
             rel="noreferrer"
           >
@@ -26,7 +26,7 @@ export default function Project({ image, title, deployedLink, githubLink }) {
           </a>
           <a
             href={githubLink}
-            className="text-white project-link fs-2"
+            className="text-white fs-2"
             target="_blank"
             rel="noreferrer"
           >

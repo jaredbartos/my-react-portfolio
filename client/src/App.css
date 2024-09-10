@@ -8,6 +8,7 @@
 
 .nav-link {
   color: black;
+  width: fit-content;
 }
 
 .active {
