@@ -3,8 +3,6 @@ import { skills } from '../assets/js/skillData';
 // Import SkillCard component
 import SkillCard from '../components/SkillCard';
 // Import icon data
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon, icons } from '../assets/js/iconData';
 import { BsFillFileTextFill } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
 

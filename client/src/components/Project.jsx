@@ -4,14 +4,14 @@ import { IconContext } from 'react-icons';
 
 export default function Project({ image, title, deployedLink, githubLink }) {
   return (
-    <div className="card m-3 shadow rounded border-0 project">
+    <div className="card m-3 shadow border bg-dark-subtle rounded-4 border-dark-subtle project">
       <img
         width="640px"
         src={image}
-        className="card-img-top"
+        className="card-img-top rounded-top-4"
         alt={`${title} Screenshot`}
       />
-      <div className="card-body background-purple rounded-bottom-1 border-top border-purple">
+      <div className="card-body background-purple rounded-bottom-4 border-top border-purple">
         <h3 className="card-title h4 text-center text-white">{title}</h3>
         <div className="d-flex justify-content-center">
           <a

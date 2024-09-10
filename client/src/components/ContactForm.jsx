@@ -18,7 +18,7 @@ function SubmitButton(props) {
     <button
       type="submit"
       onClick={props.handleSubmit}
-      className="btn mt-3 text-white shadow from-bottom delay-5"
+      className="btn mt-3 text-white shadow border-dark-subtle from-bottom delay-5"
       style={{ opacity: 0 }}
       // Disable button until form requirements are met
       disabled={
